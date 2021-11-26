@@ -100,6 +100,10 @@ section {
   padding-right: 50px;
   font-family: $family-primary;
 
+  @media (max-width: 1023px) {
+    width: calc(100% - 200px);
+  }
+
   @include for-desktop {
     font-size: 16px;
   }
@@ -125,13 +129,9 @@ section {
   color: #fff;
   padding: 10px 20px;
   margin: 0 5px;
-  @include for-phone {
-    color: $redish;
+  @media (max-width: 1023px) {
+    color: $redish !important;
     left: 100px;
-  }
-  @include for-tablet-portrait {
-    color: $redish;
-    left: 190px;
   }
 }
 
@@ -142,8 +142,10 @@ section {
   }
 }
 .navbar a:visited {
-  color: #fff;
-  background-color: $gray-light;
+  @media (min-width: 1024px) {
+    color: #fff;
+    background-color: $gray-light;
+  }
 }
 
 .navbar-menu {
@@ -156,7 +158,16 @@ section {
     width: 100vw;
     position: relative;
     left: -30px;
+    padding-top: 30px;
 
+    &.is-active {
+      height: 100vh;
+    }
+  }
+
+  @media (max-width: 767px) {
+    left: -20px;
+    top: -20px;
   }
 }
 
@@ -1473,11 +1484,11 @@ a:hover {
   padding: 0 4px;
 
   @include for-phone {
-    margin-top: -38px;
+    margin-top: 38px;
   }
 
   @include for-tablet-portrait {
-    margin-top: -20px;
+    margin-top: 20px;
   }
 }
 
