@@ -78,28 +78,19 @@ section {
 
 // NAVBAR
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $gray-light;
   width: 100%;
   height: 80px;
   position: fixed;
   top: 0px;
   padding: 0 30px;
   margin: 0 auto;
-  @include for-phone {
-    background-color: #fff;
-  }
-  @include for-tablet-portrait {
-    background-color: #fff;
-  }
+  background-color: transparent;
 
-  @include for-desktop {
+  @media (min-width: 1024px) {
     background-color: $gray-light;
-  }
-  @include for-big-desktop {
-    background-color: $gray-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -118,9 +109,15 @@ section {
 }
 
 .navbar-burger {
-  @include for-phone {
-    color: $redish;
-    left: 100px;
+  display: none;
+  @media (max-width: 1023px) {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    color: $redish !important;
+    left: auto !important;
+    background-color: rgba(0, 0, 0, 0.05);
   }
 }
 
@@ -139,8 +136,10 @@ section {
 }
 
 .navbar a:hover {
-  border-bottom: $redish 2px solid;
-  background-color: $gray-light;
+  @media (min-width: 1024px) {
+    border-bottom: $redish 2px solid;
+    background-color: $gray-light;
+  }
 }
 .navbar a:visited {
   color: #fff;
@@ -148,8 +147,17 @@ section {
 }
 
 .navbar-menu {
-  background-color: #707070;
-  width: 300px;
+  @media (min-width: 1024px) {
+    background-color: #707070;
+    width: 300px;
+  }
+
+  @media (max-width: 1023px) {
+    width: 100vw;
+    position: relative;
+    left: -30px;
+
+  }
 }
 
 .box-wrapper {
