@@ -12736,7 +12736,7 @@ a:hover {
 }
 @media (max-width: 500px) {
   .flex-columns2 img {
-    height: 87%;
+    height: 100%;
   }
 }
 @media (min-width: 501px) and (max-width: 900px) {
@@ -12763,15 +12763,17 @@ a:hover {
 
 @media (max-width: 500px) {
   .card {
-    max-width: 100%;
-    height: 50%;
-    top: 24px;
+    max-width: unset;
+    width: calc(100% + 41px);
+    height: 41%;
+    top: 21px;
     left: -40px;
   }
 }
 @media (min-width: 501px) and (max-width: 900px) {
   .card {
-    max-width: 83%;
+    max-width: unset;
+    width: calc(100% + 71px);
     height: 44%;
     top: 49px;
     left: -66px;
@@ -12779,18 +12781,20 @@ a:hover {
 }
 @media (min-width: 901px) and (max-width: 1024px) {
   .card {
-    max-width: 90%;
+    max-width: unset;
+    width: calc(100% + 51px);
     top: 49px;
     left: -66px;
-    padding: 23px;
+    padding: 3px;
   }
 }
 @media (min-width: 1025px) {
   .card {
-    max-width: 100%;
+    max-width: unset;
+    width: calc(100% + 79px);
     top: 135px;
     left: -66px;
-    padding: 23px;
+    padding: 16px;
   }
 }
 
@@ -12844,10 +12848,10 @@ a:hover {
     font-size: 14px;
     line-height: 41px;
     text-align: center;
-    padding: 0 18px;
+    padding: 0 14px;
     width: auto;
     position: relative;
-    top: 27px;
+    top: 36px;
   }
 }
 @media (min-width: 501px) and (max-width: 900px) {
@@ -12856,12 +12860,11 @@ a:hover {
     border-radius: 27px;
     border: 2px solid #f2ab39;
     margin-top: 40px;
-    margin-bottom: 40px;
     padding: 0 40px;
     font-size: 12px;
     text-align: center;
     position: relative;
-    top: 44px;
+    top: 18px;
     left: 67px;
   }
 }
@@ -12871,7 +12874,7 @@ a:hover {
     border-radius: 35px;
     border: 3px solid #f2ab39;
     position: relative;
-    top: 100px;
+    top: 68px;
     left: 134px;
     font-size: 16px;
     padding: 22px 58px;
@@ -12885,8 +12888,8 @@ a:hover {
     margin-bottom: 110px;
     margin-top: 176px;
     font-size: 18px;
-    padding: 34px 90px;
-    margin-left: 206px;
+    padding: 25px 69px;
+    margin-left: 222px;
   }
 }
 
@@ -12918,10 +12921,10 @@ a:hover {
     font-size: 14px;
     line-height: 41px;
     text-align: center;
-    padding: 0 18px;
+    padding: 0 14px;
     width: auto;
     position: relative;
-    top: 27px;
+    top: 40px;
   }
 }
 @media (min-width: 501px) and (max-width: 900px) {
@@ -12935,8 +12938,8 @@ a:hover {
     font-size: 12px;
     text-align: center;
     position: relative;
-    top: 44px;
-    left: 67px;
+    top: 31px;
+    left: 61px;
   }
 }
 @media (min-width: 901px) and (max-width: 1024px) {
@@ -12945,7 +12948,7 @@ a:hover {
     border-radius: 35px;
     border: 3px solid #c94f44;
     position: relative;
-    top: 100px;
+    top: 76px;
     left: 134px;
     font-size: 16px;
     padding: 22px 58px;
@@ -12959,8 +12962,8 @@ a:hover {
     margin-bottom: 110px;
     margin-top: 176px;
     font-size: 18px;
-    padding: 34px 90px;
-    margin-left: 206px;
+    padding: 25px 69px;
+    margin-left: 222px;
   }
 }
 
@@ -12992,10 +12995,11 @@ a:hover {
     font-size: 14px;
     line-height: 41px;
     text-align: center;
-    padding: 0 18px;
+    padding: 0 15px;
     width: auto;
     position: relative;
-    top: 27px;
+    top: 35px;
+    left: 8px;
   }
 }
 @media (min-width: 501px) and (max-width: 900px) {
@@ -13009,8 +13013,8 @@ a:hover {
     font-size: 12px;
     text-align: center;
     position: relative;
-    top: 44px;
-    left: 67px;
+    top: 33px;
+    left: 62px;
   }
 }
 @media (min-width: 901px) and (max-width: 1024px) {
@@ -13019,7 +13023,7 @@ a:hover {
     border-radius: 35px;
     border: 3px solid #8a83ae;
     position: relative;
-    top: 100px;
+    top: 81px;
     left: 134px;
     font-size: 16px;
     padding: 22px 58px;
@@ -13033,12 +13037,87 @@ a:hover {
     margin-bottom: 110px;
     margin-top: 176px;
     font-size: 18px;
-    padding: 34px 90px;
-    margin-left: 206px;
+    padding: 25px 69px;
+    margin-left: 224px;
   }
 }
 
 .btn_purple:hover {
+  color: #8a83ae;
+  background-color: white;
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+  border-color: white;
+  cursor: pointer;
+}
+
+.btn_purple2 {
+  background-color: #8a83ae;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  margin: auto;
+  -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.4);
+  border-color: #8a83ae;
+}
+@media (max-width: 500px) {
+  .btn_purple2 {
+    border-radius: 27px;
+    border: 1px solid #8a83ae;
+    font-size: 14px;
+    line-height: 41px;
+    text-align: center;
+    padding: 0 18px;
+    width: auto;
+    position: relative;
+    top: 35px;
+    left: 24px;
+  }
+}
+@media (min-width: 501px) and (max-width: 900px) {
+  .btn_purple2 {
+    line-height: 40px;
+    border-radius: 27px;
+    border: 2px solid #8a83ae;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0 40px;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    top: 32px;
+    left: 62px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1024px) {
+  .btn_purple2 {
+    line-height: 10px;
+    border-radius: 35px;
+    border: 3px solid #8a83ae;
+    position: relative;
+    top: 76px;
+    left: 134px;
+    font-size: 16px;
+    padding: 22px 58px;
+  }
+}
+@media (min-width: 1025px) {
+  .btn_purple2 {
+    line-height: 10px;
+    border-radius: 35px;
+    border: 3px solid #8a83ae;
+    margin-bottom: 110px;
+    margin-top: 176px;
+    font-size: 18px;
+    padding: 25px 69px;
+    margin-left: 263px;
+  }
+}
+
+.btn_purple2:hover {
   color: #8a83ae;
   background-color: white;
   -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
@@ -13075,7 +13154,7 @@ a:hover {
     display: block;
     margin: auto;
     position: relative;
-    top: 114px;
+    top: 90px;
     left: 220px;
     z-index: 2;
   }
@@ -13086,7 +13165,7 @@ a:hover {
     display: block;
     margin: auto;
     position: relative;
-    top: 205px;
+    top: 184px;
     left: 289px;
     z-index: 2;
   }
@@ -13100,7 +13179,7 @@ a:hover {
   .opis_restorana {
     font-size: 14px;
     line-height: 30px;
-    padding-left: 20px;
+    padding-left: 9px;
     padding-right: 20px;
   }
 }
@@ -13108,26 +13187,25 @@ a:hover {
   .opis_restorana {
     font-size: 14px;
     line-height: 22px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 8px;
   }
 }
 @media (min-width: 901px) and (max-width: 1024px) {
   .opis_restorana {
     font-size: 16px;
     line-height: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 21px;
+    margin-bottom: 15px;
   }
 }
 @media (min-width: 1025px) {
   .opis_restorana {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-size: 25px;
     line-height: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 7px;
   }
 }
 
@@ -13143,6 +13221,11 @@ a:hover {
 @media (max-width: 500px) {
   .flex-grid .row {
     margin-top: -38px;
+  }
+}
+@media (min-width: 501px) and (max-width: 900px) {
+  .flex-grid .row {
+    margin-top: -20px;
   }
 }
 
